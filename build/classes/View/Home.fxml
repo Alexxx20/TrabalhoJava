@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.HomeController">
+   <children>
+      <Label layoutX="173.0" layoutY="102.0" text="Seja bem vindo!" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="165.0" text="Aproveite os recursos disponíveis" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar prefHeight="25.0" prefWidth="142.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <menus>
+            <Menu mnemonicParsing="false" text="Salas">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Cadastrados" />
+                  <MenuItem mnemonicParsing="false" text="Lista" />
+                  <MenuItem mnemonicParsing="false" onAction="#cadastrar" text="Cadastro" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
