@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroController">
+   <children>
+      <Label layoutX="232.0" layoutY="23.0" text="Cadastro" textFill="#00ff2e">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="132.0" text="Nome:" textFill="#00ff2e">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="190.0" layoutY="174.0" text="Número:" textFill="#00ff2e">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="nome" layoutX="287.0" layoutY="133.0" />
+      <TextField fx:id="nume" layoutX="287.0" layoutY="175.0" />
+      <Button layoutX="252.0" layoutY="318.0" mnemonicParsing="false" onAction="#cadast" style="-fx-background-color: white;" text="Enviar" textFill="#00ff2e">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label layoutX="190.0" layoutY="215.0" text="Local:" textFill="#00ff2e">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <MenuBar prefHeight="25.0" prefWidth="61.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Salas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+                  <MenuItem mnemonicParsing="false" onAction="#listar" text="Lista" />
+                  <MenuItem mnemonicParsing="false" onAction="#home" text="Home" />
+               </items></Menu>
+        </menus>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </MenuBar>
+      <TextField fx:id="pc" layoutX="287.0" layoutY="216.0" />
+   </children>
+</AnchorPane>

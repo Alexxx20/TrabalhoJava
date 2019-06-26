@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="624.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.EditarController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="66.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Salas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#home" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#listar" text="Lista" />
+                  <MenuItem mnemonicParsing="false" onAction="#cadastrar" text="Cadastro" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button layoutX="240.0" layoutY="401.0" mnemonicParsing="false" onAction="#excluir" style="-fx-background-color: #555555;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Text layoutX="133.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o número do usuário que deseja Atualizar:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="134.0" layoutY="138.0" prefHeight="62.0" prefWidth="355.0">
+         <children>
+            <Label text="Número:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fieldnumero" prefHeight="31.0" prefWidth="257.0" GridPane.columnIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="98.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.0" minWidth="10.0" prefWidth="257.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="228.0" layoutY="30.0" text="Editar">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Text layoutX="134.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digites os novos dados:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadController">
+   <children>
+      <Label layoutX="256.0" layoutY="14.0" text="Login" textFill="#00ff33">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="121.0" text="Nome:" textFill="#00ff33">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="200.0" text="Senha:" textFill="#00ff33">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="no" layoutX="226.0" layoutY="122.0" />
+      <Button layoutX="248.0" layoutY="287.0" mnemonicParsing="false" onAction="#entrar" style="-fx-background-color: white;" text="Entrar" textFill="#00ff33">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="se" layoutX="226.0" layoutY="201.0" />
+   </children>
+</AnchorPane>
